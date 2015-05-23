@@ -6,7 +6,7 @@
 #
 
 # Pull base image.
-FROM dockerfile/ubuntu
+FROM ubuntu:14.04
 
 # Install Java.
 RUN \
@@ -18,7 +18,7 @@ RUN \
 WORKDIR /data
 
 # Define commonly used JAVA_HOME variable
-ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64
+ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-x86_32
 
 # Define default command.
 CMD ["bash"]
